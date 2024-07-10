@@ -15,6 +15,31 @@
   </style>
 </head>
 <body>
+  <form method="get" action="" class="formulaire">
+    <h1>
+      Contact Us
+    </h1>
+    <div>
+
+      <label for="prenom">First name *</label>
+      <input type="text" name="First_name" id="prenom" required>
+      <label for="nom">Last name *</label>
+      <input type="text" name="last_name" id="nom" required>
+    </div>
+    <label for="email">Email adress *</label>
+    <input type="email" name="email" id="email" required>
+    <div>
+      <p> Query type *</p>
+      <input type="radio" name="choix" value="general_enquiry" id="general_enquiry" required> 
+      <label for="general_enquiry">General Enquiry</label>
+      <input type="radio" name="choix" value="support_request" id="support_request" required> 
+      <label for="support_request">Support Request</label>
+    </div>
+    <input type="checkbox" name="consent" id="consent" required><label for="consent">I consent to being contact by the team *</label><br>
+    <label for="message">Message *</label><br>
+    <textarea name="message" id="message" required></textarea>
+    <input type="button" value="Submit">
+  </form>
 
   Contact Us
 
