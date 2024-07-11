@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Karla";
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf) format('ttf');
+    font-style: normal;
+    font-style: normal;
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    font-family: Karla;
+}
+.formulaire {
+    font-family: Karla-Light;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+.nomprenom{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    width: 50%;
+
+}
