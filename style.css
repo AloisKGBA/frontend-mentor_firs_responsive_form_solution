@@ -11,25 +11,69 @@ h1{
     font-family: Karla;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
-    width: 50%;
+    width: 40%;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
     margin: auto;
 }
-.nomprenom{
-    display: flex;
-    flex-direction:row;
-    width: 100%;
-    gap: 10px;
-    justify-content: space-between;
 
-}
+
 input {
     padding: auto;
-    height: 40px;
     border-radius: 10px;
+    border: 1px solid black;
+    height: 50px;
     
+}
+.nomprenom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    
+}
+
+.nomprenom input{
+    width: 97%;
+}
+.select{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+    border: 1px solid black;
+}
+.controle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    
+}
+.checkbox_cont{
+    display: flex;
+    gap :10px;  
+    align-items: center;
+    padding-inline: 10px;
+}
+.cont_mess {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cont_mess textarea{
+    height: 90px;
+}
+.bouton input{
+    color: white;
+    font-size: 1em;
+    background-color :hsl( 148,82%,27%);
+    padding: auto;
+    border-radius: 10px;
+    border: 1px solid hsl( 148,82%,27%);
+    height: 50px;
+    width: 100%;
+
 }

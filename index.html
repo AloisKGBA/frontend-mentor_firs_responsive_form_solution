@@ -23,7 +23,7 @@
     </h1>
     <div class="nomprenom">
       <div class="prenom">
-        <label for="prenom">First name *</label><br>
+        <label for="prenom"> First name *</label>
         <input type="text" name="First_name" id="prenom" required>
       </div>
       <div class="nom">
@@ -33,19 +33,34 @@
     </div>
     <label for="email">Email adress *</label>
     <input type="email" name="email" id="email" required>
-    <div>
+    <div class="choix">
       <p> Query type *</p>
-        <input type="radio" name="choix" value="general_enquiry" id="general_enquiry" required> 
-        <label for="general_enquiry">General Enquiry</label>
-        <input type="radio" name="choix" value="support_request" id="support_request" required> 
-        <label for="support_request">Support Request</label>
+      <div class="controle">
+
+        <div class="select">  
+          
+          <input type="radio" name="choix" value="general_enquiry" id="general_enquiry" required> 
+          <label for="general_enquiry">General Enquiry</label>
+        </div>
+        <div class="select">
+          
+          <input type="radio" name="choix" value="support_request" id="support_request" required> 
+          <label for="support_request">Support Request</label>
+        </div>
+      </div>
     </div>
-    <div>
-      <input type="checkbox" name="consent" id="consent" required><label for="consent">I consent to being contact by the team *</label><br>
-      <label for="message">Message *</label><br>
+    <div class="cont_mess">
+
+      <label for="message">Message *</label>
+      <textarea name="message" id="message" required></textarea>
     </div>
-    <textarea name="message" id="message" required></textarea>
-    <input type="button" value="Submit">
+    <div class="checkbox_cont">
+      <input type="checkbox" name="consent" id="consent" required>
+      <label for="consent">I consent to being contact by the team *</label><br>
+    </div>
+    <div class="bouton">
+      <input type="button" value="Submit">
+    </div>
   </form>
 
   Contact Us
