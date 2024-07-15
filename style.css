@@ -82,3 +82,12 @@ input {
     width: 100%;
 
 }
+input:hover, textarea:hover{
+    border-color: hsl(169, 82%, 27%);
+}
+.select:hover{
+    border-color: hsl(169, 82%, 27%);
+}
+.select:checked{
+    background-color: hsl(148, 38%, 91%);
+}
