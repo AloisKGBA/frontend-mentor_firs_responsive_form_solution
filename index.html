@@ -7,7 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
-  
+  <script src="script/config.js" defer></script>
+  <script src="script/script.js" defer></script>
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,79 +18,68 @@
   </style>
 </head>
 <body>
-  <form method="get" action="" class="formulaire">
-    <h1>
-      Contact Us
-    </h1>
-    <div class="nomprenom">
-      <div class="prenom">
-        <label for="prenom"> First name *</label>
-        <input type="text" name="First_name" id="prenom" required>
-      </div>
-      <div class="nom">
-        <label for="nom">Last name *</label><br>
-        <input type="text" name="last_name" id="nom" required>
-      </div>
-    </div>
-    <label for="email">Email adress *</label>
-    <input type="email" name="email" id="email" required>
-    <div class="choix">
-      <p> Query type *</p>
-      <div class="controle">
+  <main>
 
-        <div class="select">  
-          
-          <input type="radio" name="choix" value="general_enquiry" id="general_enquiry" required> 
-          <label for="general_enquiry">General Enquiry</label>
+    <form method="get" action="" class="formulaire">
+      <h1>
+        Contact Us
+      </h1>
+      <div class="nomprenom">
+        <div class="prenom">
+          <label for="prenom"> First name *</label>
+          <input type="text" name="First_name" id="prenom" required>
+          <p class="error un">This field is required</p>
         </div>
-        <div class="select">
-          
-          <input type="radio" name="choix" value="support_request" id="support_request" required> 
-          <label for="support_request">Support Request</label>
+        <div class="nom">
+          <label for="nom">Last name *</label><br>
+          <input type="text" name="last_name" id="nom" required>
+          <p class="error deux">This field is required</p>
         </div>
       </div>
-    </div>
-    <div class="cont_mess">
+      <label for="email">Email adress *</label>
+      <input type="email" name="email" id="email" >
+      <p class="error trois">Please enter a valid email adress</p>
+      <div class="choix">
+        <p> Query type *</p>
+        <div class="controle">
+          
+          <div class="select">  
+            
+            <input type="radio" name="choix" value="general_enquiry" id="general_enquiry" required> 
+            <label for="general_enquiry">General Enquiry</label>
+          </div>
+          <div class="select">
+            
+            <input type="radio" name="choix" value="support_request" id="support_request" required> 
+            <label for="support_request">Support Request</label>
+          </div>
+          <p class="error quatre">Please select a query type</p>
+        </div>
+      </div>
+      <div class="cont_mess">
+        
+        <label for="message">Message *</label>
+        <textarea name="message" id="message" required></textarea>
+        <p class="error cinq">This field is required</p>
+      </div>
+      <div class="checkbox_cont">
+        <div class="carré">
+          <input type="checkbox" name="consent" id="consent" required>
+          <label for="consent">I consent to being contact by the team *</label>
+        </div>
+        <p class="error six">To submit this form, please consent to being contacted</p>
+      </div>
+      <div class="bouton">
+        <input type="button" value="Submit" onclick="validation()">
+      </div>
+    </form>
+  </main>
+  <div class="popup_confirmation">
+    <img src="assets/images/icon-success-check.svg" alt="logo_check">
+    <p>Message sent !</p>
+    <p>Thanks for completing the form. We'll be in touch soon !</p>
+  </div>
 
-      <label for="message">Message *</label>
-      <textarea name="message" id="message" required></textarea>
-    </div>
-    <div class="checkbox_cont">
-      <input type="checkbox" name="consent" id="consent" required>
-      <label for="consent">I consent to being contact by the team *</label><br>
-    </div>
-    <div class="bouton">
-      <input type="button" value="Submit">
-    </div>
-  </form>
-
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
