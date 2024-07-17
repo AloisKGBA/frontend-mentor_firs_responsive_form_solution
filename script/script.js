@@ -5,7 +5,8 @@ function valider_mail(champ_mail){
     if (!emailRegex.test(champ_mail.value)){
         errormail.classList.add("active")
         style.classList.add("contour")
-    }
+        return false
+    }else{return true}
 }
 function valider_nom(champ_nom){
     let errornom=document.querySelector(".deux")
@@ -13,7 +14,8 @@ function valider_nom(champ_nom){
     if (champ_nom.value===""){
         errornom.classList.add("active")
         style.classList.add("contour")
-    }
+        return false
+    }else{return true}
 }
 function valider_prenom(champ_prenom){
     let errorprenom=document.querySelector(".un")
@@ -21,34 +23,56 @@ function valider_prenom(champ_prenom){
     if (champ_prenom.value===""){
         errorprenom.classList.add("active")
         style.classList.add("contour")
-    }
+        return false
+    }else {return true}
 }
-function valider_choix(champ_radio){
+function valider_choix(champ_radio_un,champ_radio_deux){
     let errorradio=document.querySelector(".quatre")
-    if (champ_radio!=="checked"){
+    if (!champ_radio_un.checked && !champ_radio_deux.checked){
         errorradio.classList.add("active")
+        return false
+        }else{return true}
     }
-}
+
 function valider_mess(champ_mess){
     let errormess=document.querySelector(".cinq")
     let style=document.getElementById("message")
     if (champ_mess.value===""){
         errormess.classList.add("active")
-        style.classList.add("testy")
-        // style.style= "border: 1px solid red;";
-        console.log(style)
-    }
+        style.style= "border: 1px solid red;";
+        return false
+    }else {return true}
 }
 function valider_consent(champ_select){
     let errorconsent=document.querySelector(".six")
-    if (champ_select!=="checked"){
+    if (!champ_select.checked){
         errorconsent.classList.add("active")
+        return false
+    }else{return true}
+}
+
+function validation(){
+    let indice=0
+    indice = ( valider_nom(champ_nom)) ? indice + 1 : indice
+    console.log(indice)
+    indice=( valider_prenom(champ_prénom) ) ? indice+1 : indice
+    console.log(indice)
+    indice=( valider_mail(champ_mail) ) ? indice+1 : indice
+    console.log(indice)
+    indice=( valider_mess(champ_mess) ) ? indice+1 : indice
+    console.log(indice)
+    indice=( valider_consent(champ_select) ) ? indice+1 : indice
+    console.log(indice)
+    indice=( valider_choix(champ_radio_un,champ_radio_deux) ) ? indice+1 : indice
+    console.log(indice)
+    if (indice===6){
+        afficherPopup()
     }
 }
 
 function afficherPopup(){
     let popup=document.querySelector(".popup_confirmation")
-    popup.classList("active")
+    popup.classList.add("active")
 }
 
 function click_btn(){
@@ -57,12 +81,4 @@ function click_btn(){
       event.preventDefault()  
       afficherPopup()
     })
-}
-function validation(){
-    valider_nom(champ_nom)
-    valider_prenom(champ_prénom)
-    valider_mail(champ_mail)
-    valider_mess(champ_mess)
-    valider_consent(champ_select)
-    valider_choix(champ_radio)
 }

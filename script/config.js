@@ -1,6 +1,7 @@
 let champ_nom=document.getElementById("nom")
 let champ_prénom=document.getElementById("prenom")
 let champ_mail=document.getElementById("email") 
-let champ_radio = document.querySelectorAll(".controle input")
+let champ_radio_un = document.getElementById("general_enquiry")
+let champ_radio_deux=document.getElementById("support_request")
 let champ_mess= document.getElementById("message")
 let champ_select=document.getElementById("consent")
