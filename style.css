@@ -107,7 +107,23 @@ input:hover, textarea:hover{
     color: hsl(169, 82%, 27%);
 }
 .popup_confirmation{
+    color: white;
+    font-family: Karla;
+    font-size: 14px;
+    background-color: hsl(187, 24%,22%);
     display: none;
+    flex-direction: column;
+    position: fixed ;
+    height: auto;
+    width: 20%;
+    align-items: flex-start;
+    padding-left: 20px;
+    border-radius: 15px;
+    
+}
+.titre{
+    display: flex;
+    align-items: center;
 }
 .error{
     display: none;

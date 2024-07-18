@@ -1,0 +1,17 @@
+@media screen and (min-width:375px) and (max-width:1440px) {
+    .formulaire{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nomprenom{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .controle{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

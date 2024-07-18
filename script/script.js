@@ -6,7 +6,10 @@ function valider_mail(champ_mail){
         errormail.classList.add("active")
         style.classList.add("contour")
         return false
-    }else{return true}
+    }else{
+        errormail.classList.remove("active")
+        style.classList.remove("contour")
+        return true}
 }
 function valider_nom(champ_nom){
     let errornom=document.querySelector(".deux")
@@ -15,7 +18,10 @@ function valider_nom(champ_nom){
         errornom.classList.add("active")
         style.classList.add("contour")
         return false
-    }else{return true}
+    }else{
+        errornom.classList.remove("active")
+        style.classList.remove("contour")
+        return true}
 }
 function valider_prenom(champ_prenom){
     let errorprenom=document.querySelector(".un")
@@ -24,14 +30,19 @@ function valider_prenom(champ_prenom){
         errorprenom.classList.add("active")
         style.classList.add("contour")
         return false
-    }else {return true}
+    }else {
+        errorprenom.classList.remove("active")
+        style.classList.remove("contour")
+        return true}
 }
 function valider_choix(champ_radio_un,champ_radio_deux){
     let errorradio=document.querySelector(".quatre")
     if (!champ_radio_un.checked && !champ_radio_deux.checked){
         errorradio.classList.add("active")
         return false
-        }else{return true}
+        }else{
+            errorradio.classList.remove("active")
+            return true}
     }
 
 function valider_mess(champ_mess){
@@ -41,14 +52,19 @@ function valider_mess(champ_mess){
         errormess.classList.add("active")
         style.style= "border: 1px solid red;";
         return false
-    }else {return true}
+    }else {
+        errormess.classList.remove("active")
+        style.style="border: 1px solid black"
+        return true}
 }
 function valider_consent(champ_select){
     let errorconsent=document.querySelector(".six")
     if (!champ_select.checked){
         errorconsent.classList.add("active")
         return false
-    }else{return true}
+    }else{
+        errorconsent.classList.remove("active")
+        return true}
 }
 
 function validation(){
