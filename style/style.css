@@ -42,6 +42,8 @@ input {
 }
 .select{
     border-radius: 10px;
+    padding: auto;
+    height: 50px;
     display: flex;
     align-items: center;
     gap: 10px;

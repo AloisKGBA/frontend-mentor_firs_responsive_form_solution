@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutons Radio avec Images</title>
+    <style>
+        input[type="radio"].demo4 {
+            opacity: 0.5;
+            width: 24px;
+            height: 24px;
+        }
+        input[type="radio"].demo4 + label {
+            display: flex;
+            align-items: center;
+        }
+        input[type="radio"].demo4 + label img {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+            opacity: 0.0    ;
+        }
+        input[type="radio"].demo4:checked + label img {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="demo4" class="demo4" id="demo4-a" >
+    <label for="demo4-a">
+        <img src="assets/images/icon-radio-selected.svg" alt="Oui">
+        Oui
+    </label>
+        
+    <input type="radio" name="demo4" class="demo4" id="demo4-b">
+    <label for="demo4-b">
+        <img src="assets/images/icon-radio-selected.svg " alt="Non">
+        Non
+    </label>
+</body>
+</html>

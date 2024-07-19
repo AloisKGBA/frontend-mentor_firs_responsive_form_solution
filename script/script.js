@@ -98,3 +98,11 @@ function click_btn(){
       afficherPopup()
     })
 }
+function mafonction(){
+    let select=document.getElementById("general_enquiry")
+    let image_1=document.getElementById("image_1")
+    let image_2=document.getElementById("image_2")
+    let select2=document.getElementById("support_request")
+    select.style="display:none;"
+    image_1.style="display: flex;"
+}

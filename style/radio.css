@@ -1,0 +1,13 @@
+label{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+.select input{
+    width: 24px;
+    height: 24px;
+}
+.select label img{
+    width: 24px;
+    height: 24px;
+}
