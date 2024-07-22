@@ -39,6 +39,7 @@ input {
 
 .nomprenom input{
     width: 97%;
+    margin-top: 10px
 }
 .select{
     border-radius: 10px;
@@ -135,4 +136,21 @@ input:hover, textarea:hover{
 }
 .contour{
     border: 1px solid red;
+}
+label{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+.select input{
+    width: 24px;
+    height: 24px;
+}
+.select label img{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.desactive{
+    display: none;
 }

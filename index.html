@@ -7,8 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/radio.css">
+  <link rel="stylesheet" href="style/select.css">
   <link rel="stylesheet" href="style/media.css">
+  <link rel="stylesheet" href="style/radio.css">
   <script src="script/config.js" defer></script>
   <script src="script/script.js" defer></script>
   <title>Frontend Mentor | Contact form</title>
@@ -40,7 +41,7 @@
           <p class="error un">This field is required</p>
         </div>
         <div class="nom">
-          <label for="nom">Last name *</label><br>
+          <label for="nom">Last name *</label>
           <input type="text" name="last_name" id="nom" required>
           <p class="error deux">This field is required</p>
         </div>
@@ -51,11 +52,11 @@
       <div class="choix">
         <p> Query type *</p>
         <div class="controle">
-          <div class="select " onclick="mafonction()">            
+          <div class="select zone1">            
             <input type="radio" name="choix" class="botmode" value="general_enquiry" id="general_enquiry" > 
             <label for="general_enquiry"><img src="assets/images/icon-radio-selected.svg" alt="image checked" id="image_1"> General Enquiry</label>
           </div>
-          <div class="select" onclick="mafonction1()">            
+          <div class="select zone2" >            
             <input type="radio" name="choix" class="botmode" value="support_request" id="support_request" > 
             <label for="support_request"><img src="assets/images/icon-radio-selected.svg" alt="image checked" id="image_2">Support Request</label>
           </div>
@@ -69,8 +70,8 @@
       </div>
       <div class="checkbox_cont">
         <div class="carré">
-          <input type="checkbox" name="consent" id="consent" >
-          <label for="consent">I consent to being contact by the team *</label>
+          <input type="checkbox" name="consent" id="consent" class="consent">
+          <label for="consent"><img src="assets/images/icon-checkbox-check.svg" alt="select_check" id="image_3">I consent to being contact by the team *</label>
         </div>
         <p class="error six">To submit this form, please consent to being contacted</p>
       </div>

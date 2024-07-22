@@ -1,0 +1,19 @@
+.carré input+label {
+    display: flex;
+    align-items: center;
+}
+.carré input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+.carré input + label img {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.carré input[type="checkbox"]:checked + label img {
+    display: flex;
+}
+.carré input[type="checkbox"]:checked {
+    display: none;
+}
